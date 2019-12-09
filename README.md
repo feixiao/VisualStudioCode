@@ -31,4 +31,5 @@ go install
 
 ### C++
 + [《 Visual Studio Code 配置C/C++环境》](https://blog.csdn.net/saga1979/article/details/87938161)
-+ [《Visual Studio Code远程调试》](https://www.cnblogs.com/mightycode/p/10876119.html) WSL、SSH、Containers
++ [《Visual Studio Code远程调试》](https://www.cnblogs.com/mightycode/p/10876119.html) WSL、SSH、Containers）
++ [《把你的 VS Code 打造成 C++ 开发利器》](https://mp.weixin.qq.com/s/zA3HWWq-R0PT40CuLIbGsQ)

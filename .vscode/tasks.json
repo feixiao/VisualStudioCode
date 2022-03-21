@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "cmake",  // task的名字
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				// "-DCMAKE_BUILD_TYPE=${input:CMAKE_BUILD_TYPE}",
+				"../cpp"
+			],
+			"options": {
+				"cwd": "cpp"  // 表示当前执行目录build文件夹
+			},
+			"presentation": {  // 一些控制台显示配置
+				"echo": true,
+				"reveal": "always",  
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": true
+			},
+			// Use the standard MS compiler pattern to detect errors, warnings and infos
+			"problemMatcher": "$msCompile"
+			// "dependsOn":["mkbuild"]  // 依赖的任务，在本任务执行前先执行mkbuild任务
+		}
+	]
+}

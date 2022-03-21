@@ -32,3 +32,4 @@ go install
 + [《Visual Studio Code远程调试》](https://www.cnblogs.com/mightycode/p/10876119.html) WSL、SSH、Containers）
 + [《把你的 VS Code 打造成 C++ 开发利器》](https://mp.weixin.qq.com/s/zA3HWWq-R0PT40CuLIbGsQ)
 + [《VS Code与CMake》](https://www.cnblogs.com/iwiniwin/p/13705456.html)
++ [《VS Code 搭建 C++ 开发环境(OSX系统)》](https://xie.infoq.cn/article/1dd3fe369ec9f3db5661570fa)

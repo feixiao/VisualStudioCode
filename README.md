@@ -33,6 +33,9 @@ go install
 + [《例子》](https://github.com/feixiao/cmake-catch-vsc-template)
 + [《Get started with CMake Tools on Linux》](https://code.visualstudio.com/docs/cpp/cmake-linux)
 
+##### ToDo
++ [ ] 支持静态库
++ [ ] 支持单元测试
 
 ##### 参考资料
 + [《Visual Studio Code远程调试》](https://www.cnblogs.com/mightycode/p/10876119.html) WSL、SSH、Containers）

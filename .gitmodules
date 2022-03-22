@@ -1,0 +1,3 @@
+[submodule "cmake-catch-vsc-template"]
+	path = cmake-catch-vsc-template
+	url = https://github.com/feixiao/cmake-catch-vsc-template.git

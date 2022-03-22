@@ -29,6 +29,12 @@ go install
 
 
 ### C++
+##### 推荐使用cmake-tools插件
++ [《例子》](https://github.com/feixiao/cmake-catch-vsc-template)
++ [《Get started with CMake Tools on Linux》](https://code.visualstudio.com/docs/cpp/cmake-linux)
+
+
+##### 参考资料
 + [《Visual Studio Code远程调试》](https://www.cnblogs.com/mightycode/p/10876119.html) WSL、SSH、Containers）
 + [《把你的 VS Code 打造成 C++ 开发利器》](https://mp.weixin.qq.com/s/zA3HWWq-R0PT40CuLIbGsQ)
 + [《VS Code与CMake》](https://www.cnblogs.com/iwiniwin/p/13705456.html)

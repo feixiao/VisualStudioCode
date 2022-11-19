@@ -1,17 +1,17 @@
 ### Go
 
 ```shell
-go get golang.org/x/tools/gopls@latest
-go get -u github.com/cweill/gotests
-go get github.com/go-delve/delve/cmd/dlv
-go get -u -v github.com/rogpeppe/godef
-go get -u -v github.com/golang/lint/golint
-go get -u -v github.com/lukehoban/go-find-references
-go get -u -v github.com/lukehoban/go-outline
-go get -u -v github.com/tpng/gopkgs 
-go get -u -v github.com/newhook/go-symbols
-go get -u -v sourcegraph.com/sqs/goreturns
-go get -u -v golang.org/x/tools/cmd/gorename
+export GO111MODULE=on
+go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install github.com/rogpeppe/godef@latest
+go install github.com/golang/lint/golint@latest
+go install github.com/lukehoban/go-find-references@latest
+go install github.com/lukehoban/go-outline@latest
+go install github.com/tpng/gopkgs@latest
+go install github.com/newhook/go-symbols@latest
+go install sourcegraph.com/sqs/goreturns@latest
+go install golang.org/x/tools/cmd/gorename@latest
 
 
 # tools/cmd/gorename

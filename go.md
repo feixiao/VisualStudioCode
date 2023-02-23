@@ -21,6 +21,19 @@ cd cmd/gorename
 go install
 ```
 
+#### 多版本管理
+```shell
+curl -sSL https://github.com/soulteary/gvm/raw/master/binscripts/gvm-installer | bash
+
+gvm install go1.19.6 -B
+gvm use go1.19.6
+gvm use go1.19.6 --default
+
+gvm install go1.20.1 -B
+gvm use go1.20.1
+```
++ [《M1 芯片 Mac 上更好的 Golang 使用方案》](https://segmentfault.com/a/1190000041899585)
+
 #### 参考项目
 + [《go-zero-demo》](https://github.com/feixiao/go-zero-demo.git)
 

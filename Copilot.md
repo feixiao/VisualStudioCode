@@ -3,6 +3,7 @@
 #### Copilot in Visual Studio Code
 
 - [《在 Visual Studio Code 中开始使用 GitHub Copilot》](https://docs.github.com/zh/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-visual-studio-code)
+  - [codeium](https://codeium.com/download) Copilot 的平替
 
 #### 使用方式
 

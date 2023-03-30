@@ -12,6 +12,19 @@
 - [ ] 支持静态库
 - [ ] 支持单元测试
 
+##### CoreDump
+
+###### OSX
+
+```shell
+sudo sysctl kern.coredump=1
+
+sudo mkdir /cores
+sudo chown root:admin /cores
+sudo chmod 1775 /cores
+sudo chmod o+w /cores
+```
+
 ##### 参考资料
 
 - [《Visual Studio Code 远程调试》](https://www.cnblogs.com/mightycode/p/10876119.html) WSL、SSH、Containers）

@@ -1,10 +1,11 @@
 #include <cstdio>
 #include <cstdlib>
 
-// clang++ -g  -O0 -o coredump_test coredump_test.cpp
+// clang++  -arch x86_64 -march=native -g  -O0 -o coredump_test coredump_test.cpp
+// ulimit -c unlimited
 // ./coredump_test
-// lldb ./coredump_test
-// lldb -c /core/core.1234
+// lldb -arch x86_64 ./coredump_test  # 可以看到符号信息
+// lldb -arch x86_64 -c /core/core.1234 # 不能可以看到符号信息
 
 int main()
 {

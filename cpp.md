@@ -23,6 +23,8 @@ sudo mkdir /cores
 sudo chown root:admin /cores
 sudo chmod 1775 /cores
 sudo chmod o+w /cores
+
+# example cpp/coredump_test.cpp
 ```
 
 ##### 参考资料

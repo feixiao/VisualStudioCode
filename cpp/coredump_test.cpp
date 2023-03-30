@@ -1,9 +1,11 @@
 #include <cstdio>
 #include <cstdlib>
 
-// clang++ -g -o coredump_test coredump_test.cpp
+// clang++ -g  -O0 -o coredump_test coredump_test.cpp
 // ./coredump_test
 // lldb ./coredump_test
+// lldb -c /core/core.1234
+
 int main()
 {
     int *ptr = NULL;

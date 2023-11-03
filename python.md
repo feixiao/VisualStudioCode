@@ -19,6 +19,9 @@ conda deactivate env_name
 conda install package_name
 ```
 
+#### 如何运行在WSL的Python环境
++ 打开方式不能是直接打开文件夹，而是应该先连接到WSL，然后打开的时候就是在WSL路径。
++ 插件重新在这个环境安装。
 
 
 

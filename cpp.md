@@ -27,6 +27,14 @@ sudo chmod o+w /cores
 # example cpp/coredump_test.cpp
 ```
 
+#### 自定义 C++代码风格
+
+Settings.json 中添加
+
+```
+"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, ColumnLimit: 120, PointerAlignment: Right, AccessModifierOffset: -2, DerivePointerAlignment: false, SpacesBeforeTrailingComments: 1 }"
+```
+
 ##### 参考资料
 
 - [《Visual Studio Code 远程调试》](https://www.cnblogs.com/mightycode/p/10876119.html) WSL、SSH、Containers）

@@ -29,11 +29,7 @@ sudo chmod o+w /cores
 
 #### 自定义 C++代码风格
 
-Settings.json 中添加
-
-```
-"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, ColumnLimit: 120, PointerAlignment: Right, AccessModifierOffset: -2, DerivePointerAlignment: false, SpacesBeforeTrailingComments: 1 }"
-```
+[VSC 使用 Google C++风格](https://blog.csdn.net/weixin_44179485/article/details/113541029) 中添加
 
 ##### 参考资料
 

@@ -4,5 +4,5 @@
 
 - [CPP](./cpp.md)
 - [Go](./go.md)
-
+- [Python](./python.md)
 - [Copilot in Visual Studio Code](./Copilot.md)

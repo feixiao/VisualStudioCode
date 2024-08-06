@@ -15,14 +15,12 @@ brew install ctags cscope
 
 ##### 使用前提
 
-````shell
+```shell
 ctags -R -f .tags
 ```
 
-
+#### 配置 Java 阅读环境
 
 #### 参考资料
-+ [ctags-support](https://marketplace.visualstudio.com/items?itemName=jaydenlin.ctags-support)
 
-
-````
+- [ctags-support](https://marketplace.visualstudio.com/items?itemName=jaydenlin.ctags-support)

@@ -27,104 +27,37 @@ sourceSets {
 {
     "configurations": [
         {
-            "name": "Mac",
+            "name": "Linux",
             "includePath": [
-                "${workspaceFolder}",
-                "${workspaceFolder}/core/include",
-                "${workspaceFolder}/core/base/include",
-                "${workspaceFolder}/core/logd/",
-                "${workspaceFolder}/core/libutils/include",
-                "${workspaceFolder}/core/liblog/include",
-                "${workspaceFolder}/core/libcutils/include",
-                "${workspaceFolder}/core/libsystem/include",
-                "/Volumes/case-sensitive/android-os/platform/bionic/libc/include",
-                "/Volumes/case-sensitive/android-os/platform/bionic/libc/kernel/uapi",
-                "/Volumes/case-sensitive/android-os/platform/bionic/libc/kernel/uapi/asm-x86",
-                "/Volumes/case-sensitive/android-os/platform/bionic/libc/kernel/android/uapi",
-                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
+                "${workspaceFolder}/**",
                 "/usr/local/include",
-                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include",
-                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
-                "/usr/include"
+                "/usr/include",
+                "${workspaceFolder}/frameworks/av/include",
+                "${workspaceFolder}/frameworks/av/media/libmedia/include"
             ],
+            
             "defines": [
                 "__ANDROID__"
             ],
-            "intelliSenseMode": "clang-x64",
+
             "browse": {
                 "path": [
                     "${workspaceFolder}",
-                    "${workspaceFolder}/core/include",
-                    "${workspaceFolder}/core/base/include",
-                    "${workspaceFolder}/core/logd/",
-                    "${workspaceFolder}/core/libutils/include",
-                    "${workspaceFolder}/core/liblog/include",
-                    "${workspaceFolder}/core/libcutils/include",
-                    "${workspaceFolder}/core/libsystem/include",
-                    "/Volumes/case-sensitive/android-os/platform/bionic/libc/include",
-                    "/Volumes/case-sensitive/android-os/platform/bionic/libc/kernel/uapi",
-                    "/Volumes/case-sensitive/android-os/platform/bionic/libc/kernel/uapi/asm-x86",
-                    "/Volumes/case-sensitive/android-os/platform/bionic/libc/kernel/android/uapi",
-                    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
+                    "${workspaceFolder}/**",
                     "/usr/local/include",
-                    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include",
-                    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
                     "/usr/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             },
-            "macFrameworkPath": [
-                "/System/Library/Frameworks",
-                "/Library/Frameworks"
-            ],
             "compilerPath": "/usr/bin/clang",
-            "cStandard": "c11",
-            "cppStandard": "c++17"
-        },
-        {
-            "name": "Linux",
-            "includePath": [
-                "/usr/include",
-                "/usr/local/include",
-                "${workspaceFolder}"
-            ],
-            "defines": [],
-            "intelliSenseMode": "clang-x64",
-            "browse": {
-                "path": [
-                    "/usr/include",
-                    "/usr/local/include",
-                    "${workspaceFolder}"
-                ],
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
-            }
-        },
-        {
-            "name": "Win32",
-            "includePath": [
-                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
-                "${workspaceFolder}"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "intelliSenseMode": "msvc-x64",
-            "browse": {
-                "path": [
-                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
-                    "${workspaceFolder}"
-                ],
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
-            }
+            "cStandard": "c17",
+            "intelliSenseMode": "linux-clang-x64"
         }
     ],
     "version": 4
 }
+
 ```
 
 #### 参考资料

@@ -27,6 +27,26 @@ sudo chmod o+w /cores
 # example cpp/coredump_test.cpp
 ```
 
+
+#### 配置 C++代码阅读环境
+
+##### 安装依赖
+
+- 安装依赖工具
+
+```shell
+brew install ctags cscope
+```
+
+- 安装插件
+  https://marketplace.visualstudio.com/items?itemName=jaydenlin.ctags-support
+
+##### 使用前提
+
+```shell
+ctags -R -f .tags
+```
+
 #### 自定义 C++代码风格
 
 [VSC 使用 Google C++风格](https://blog.csdn.net/weixin_44179485/article/details/113541029) 中添加

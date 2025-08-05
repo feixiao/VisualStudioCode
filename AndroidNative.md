@@ -41,16 +41,15 @@
             "program": "${workspaceRoot}/android/build_arm64-v8a/hello",
             "additionalSOLibSearchPath": "${workspaceRoot}", # 这边其实没有依赖库
             "miDebuggerServerAddress": "localhost:5039",
-            "MIDebuggerPath":
             "setupCommands": [
                 {
                     // "text": "set solib-absolute-prefix ${workspaceRoot}/app/path/android",
                     "ignoreFailures": false
                 }
             ],
-            "windows": {
-                "MIDebuggerPath": "C:/Tools/android-ndk-r13b/prebuilt/windows-x86_64/bin/gdb.exe",
-                "MIMode": "gdb"
+            "osx": {
+                "miDebuggerPath": "/Applications/AndroidNDK8568313.app/Contents/NDK/prebuilt/darwin-x86_64/bin/gdb",
+                "miMode": "gdb"
             }
         }
 ```

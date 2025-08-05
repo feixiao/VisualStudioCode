@@ -55,16 +55,14 @@
             "preLaunchTask": "Forward_Debug_Port",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/android/build_arm64-v8a/hello",
-            "additionalSOLibSearchPath": "${workspaceRoot}/app/Intermediate/android/mylib/local/armeabi-v7a",
+            "additionalSOLibSearchPath": "${workspaceRoot}", 
             "miDebuggerServerAddress": "localhost:5039",
-            "setupCommands": [
-                {
-                    // "text": "set solib-absolute-prefix ${workspaceRoot}/app/path/android",
-                    "ignoreFailures": false
-                }
-            ],
             "windows": {
-                "miDebuggerPath": "/Applications/AndroidNDK12479018.app/Contents/NDK/prebuilt/darwin-x86_64/bin/ndk-gdb",
+                "miDebuggerPath": "",
+                "MIMode": "gdb"
+            },
+            "osx": {
+                "miDebuggerPath": "/Applications/AndroidNDK8568313.app/Contents/NDK/prebuilt/darwin-x86_64/bin/gdb",
                 "MIMode": "gdb"
             }
         }

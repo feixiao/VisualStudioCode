@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+ 	{
+            "label": "Forward_Debug_Port",
+            "type": "shell",
+            "command": "adb",
+            "args": [
+                "forward",
+                "tcp:5039",
+                "tcp:5039"
+            ],
+            "presentation": {
+                "reveal": "never"
+            },
+            "problemMatcher": []
+    }
+	]
+}

@@ -3,6 +3,15 @@
 #### 准备好工程
 参考android
 
+
+#### 配置Python环境
+```shell
+# 使用NDK r23c,24开始就没gdb了
+/Applications/AndroidNDK8568313.app/Contents/NDK/prebuilt/darwin-x86_64/bin/gdb
+
+
+```
+
 #### 配置工程
 ##### 配置task，在.vscode的task.json文件中
 ```json
@@ -32,6 +41,7 @@
             "program": "${workspaceRoot}/android/build_arm64-v8a/hello",
             "additionalSOLibSearchPath": "${workspaceRoot}", # 这边其实没有依赖库
             "miDebuggerServerAddress": "localhost:5039",
+            "MIDebuggerPath":
             "setupCommands": [
                 {
                     // "text": "set solib-absolute-prefix ${workspaceRoot}/app/path/android",
@@ -39,7 +49,7 @@
                 }
             ],
             "windows": {
-                "miDebuggerPath": "C:/Tools/android-ndk-r13b/prebuilt/windows-x86_64/bin/gdb.exe",
+                "MIDebuggerPath": "C:/Tools/android-ndk-r13b/prebuilt/windows-x86_64/bin/gdb.exe",
                 "MIMode": "gdb"
             }
         }
@@ -48,4 +58,5 @@
 
 
 #### 参考资料
++ [《Android 使用 gdb 搭配 Visual Studio Code 遠端除錯教學》](https://shengyu7697.github.io/android-debugging-with-vscode/)
 + [《Android Debugging with Visual Studio Code》](https://www.gamedev.net/tutorials/programming/general-and-gameplay-programming/android-debugging-with-visual-studio-code-r4820/)

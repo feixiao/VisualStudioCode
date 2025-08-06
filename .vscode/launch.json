@@ -57,7 +57,7 @@
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/android/build_arm64-v8a/hello",
             "additionalSOLibSearchPath": "${workspaceRoot}", 
-            "miDebuggerServerAddress": "localhost:5039",
+            "miDebuggerServerAddress": "172.19.101.17:5039",
             "windows": {
                 "miDebuggerPath": "",
                 "MIMode": "gdb"

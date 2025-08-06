@@ -23,7 +23,15 @@ for APP_ABI in ${APP_ABIs}
 do
 
 cd $WORKSPACE
-mkdir build_${APP_ABI} && cd build_${APP_ABI}
+
+# 判断是否存在 build_${APP_ABI} 目录
+if [ -d "build_${APP_ABI}" ]; then
+    echo "Directory build_${APP_ABI} already exists."
+else
+    mkdir build_${APP_ABI}
+fi
+
+cd build_${APP_ABI}
 
 cmake -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake \
  -DANDROID_ABI=${APP_ABI} \

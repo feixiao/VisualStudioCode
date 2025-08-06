@@ -31,29 +31,39 @@
     }
 ```
 #### 配置工程启动，在.vscode的launch.json中
++ 注：osx 有问题Debugger executable '/usr/local/bin/gdb' is not signed.
 ```json
 {
-            "name": "Remote GDB",
-            "type": "cppdbg",
-            "request": "launch",
-            "preLaunchTask": "Forward_Debug_Port",  # 同上，依赖性
-            "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/android/build_arm64-v8a/hello",
-            "additionalSOLibSearchPath": "${workspaceRoot}", # 这边其实没有依赖库
-            "miDebuggerServerAddress": "localhost:5039",
-            "setupCommands": [
-                {
-                    // "text": "set solib-absolute-prefix ${workspaceRoot}/app/path/android",
-                    "ignoreFailures": false
-                }
-            ],
-            "osx": {
-                "miDebuggerPath": "/Applications/AndroidNDK8568313.app/Contents/NDK/prebuilt/darwin-x86_64/bin/gdb",
-                "miMode": "gdb"
-            }
-        }
+    "name": "Remote GDB",
+    "type": "cppdbg",
+    "request": "launch",
+            
+    "preLaunchTask": "Build_Android",
+    "cwd": "${workspaceRoot}",
+    "program": "${workspaceRoot}/android/build_arm64-v8a/hello",
+    "additionalSOLibSearchPath": "${workspaceRoot}", 
+    "miDebuggerServerAddress": "172.19.101.17:5039",
+    "windows": {
+        "miDebuggerPath": "",
+        "MIMode": "gdb"
+    },
+    "osx": {
+        "miDebuggerPath": "/Applications/AndroidNDK8568313.app/Contents/NDK/prebuilt/darwin-x86_64/bin/gdb",
+        "MIMode": "gdb"
+    }
+}
+        
 ```
 
+
+#### 客户端配置
+```shell
+# 推送gdbserver到设备
+export ANROID_NDK="/Applications/AndroidNDK8568313.app/Contents/NDK"
+adb push ${ANROID_NDK}/prebuilt/android-arm64/gdbserver/gdbserver /data/local/tmp
+# 使用adb命令来forward tcp端口是最常用的
+adb forward tcp:5039 tcp:5039
+```
 
 
 #### 参考资料

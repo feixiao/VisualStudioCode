@@ -64,6 +64,9 @@ export ANROID_NDK="/opt/ndk/android-ndk-r23b"
 adb push ${ANROID_NDK}/prebuilt/android-arm64/gdbserver/gdbserver /data/local/tmp
 # 使用adb命令来forward tcp端口是最常用的
 adb forward tcp:5039 tcp:5039
+
+# 启动程序
+ /data/local/tmp/gdbserver :5039 ./hello
 ```
 
 

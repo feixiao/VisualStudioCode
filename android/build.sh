@@ -9,7 +9,11 @@
 export ANDROID_NDK=/Applications/AndroidNDK12479018.app/Contents/NDK
 export PATH=${PATH}:${ANDROID_NDK}/toolchains/llvm/prebuilt/darwin-x86_64/bin
 
-WORKSPACE=$(cd "$dirname "$0")";pwd)
+
+dirname=$(dirname "$0")
+WORKSPACE=$(cd "$dirname"; pwd)
+echo $WORKSPACE
+
 #APP_ABIs="arm64-v8a armeabi-v7a"
 APP_ABIs="arm64-v8a"
 

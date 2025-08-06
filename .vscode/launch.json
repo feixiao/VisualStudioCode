@@ -65,7 +65,14 @@
             "osx": {
                 "miDebuggerPath": "/Applications/AndroidNDK8568313.app/Contents/NDK/prebuilt/darwin-x86_64/bin/gdb",
                 "MIMode": "gdb"
-            }
+            },
+            "linux": {
+                "miDebuggerPath": "/opt/ndk/android-ndk-r23b/prebuilt/linux-x86_64/bin/gdb",
+                "MIMode": "gdb"
+            },
         }
 ]
 }
+
+
+

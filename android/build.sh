@@ -2,12 +2,12 @@
 
 
 # For Ubuntu
-
-#export ANDROID_NDK=/opt/ndk/android-ndk-r26d
+export ANDROID_NDK=/opt/ndk/android-ndk-r23b
+export PATH=${PATH}:${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin
 
 # For OSX
-export ANDROID_NDK=/Applications/AndroidNDK12479018.app/Contents/NDK
-export PATH=${PATH}:${ANDROID_NDK}/toolchains/llvm/prebuilt/darwin-x86_64/bin
+#export ANDROID_NDK=/Applications/AndroidNDK12479018.app/Contents/NDK
+#export PATH=${PATH}:${ANDROID_NDK}/toolchains/llvm/prebuilt/darwin-x86_64/bin
 
 
 dirname=$(dirname "$0")

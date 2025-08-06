@@ -60,6 +60,7 @@
 ```shell
 # 推送gdbserver到设备
 export ANROID_NDK="/Applications/AndroidNDK8568313.app/Contents/NDK"
+export ANROID_NDK="/opt/ndk/android-ndk-r23b"
 adb push ${ANROID_NDK}/prebuilt/android-arm64/gdbserver/gdbserver /data/local/tmp
 # 使用adb命令来forward tcp端口是最常用的
 adb forward tcp:5039 tcp:5039
@@ -69,3 +70,4 @@ adb forward tcp:5039 tcp:5039
 #### 参考资料
 + [《Android 使用 gdb 搭配 Visual Studio Code 遠端除錯教學》](https://shengyu7697.github.io/android-debugging-with-vscode/)
 + [《Android Debugging with Visual Studio Code》](https://www.gamedev.net/tutorials/programming/general-and-gameplay-programming/android-debugging-with-visual-studio-code-r4820/)
++ [《How do I use lldb to debug C++ code on Android on command line》](https://stackoverflow.com/questions/53733781/how-do-i-use-lldb-to-debug-c-code-on-android-on-command-line)

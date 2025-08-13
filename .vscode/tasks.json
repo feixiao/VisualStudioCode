@@ -25,6 +25,19 @@
                 "reveal": "always"
             },
             "problemMatcher": []
-        }
+        },{
+			"type": "shell",
+			"label": "QMAKE",
+			"command": "qmake CONFIG+=debug && make",
+			"problemMatcher": [],
+			"options": {
+                "cwd": "${workspaceFolder}/qt"
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+
+			"detail": "QMake 模板 工作流 任务"
+		}
 	]
 }

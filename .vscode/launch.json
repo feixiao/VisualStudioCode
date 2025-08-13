@@ -70,7 +70,20 @@
                 "miDebuggerPath": "/opt/ndk/android-ndk-r23b/prebuilt/linux-x86_64/bin/gdb",
                 "MIMode": "gdb"
             },
-        }
+        },{
+        "name": "qt_hello",
+        "type": "cppdbg",
+        "preLaunchTask": "QMAKE",
+        "request": "launch",
+        "program": "${workspaceFolder}/qt/hello",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}/qt", 
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb"
+    }
+
 ]
 }
 

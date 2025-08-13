@@ -28,7 +28,7 @@
         },{
 			"type": "shell",
 			"label": "QMAKE",
-			"command": "qmake CONFIG+=debug && make",
+			"command": "qmake -config debug  && make",
 			"problemMatcher": [],
 			"options": {
                 "cwd": "${workspaceFolder}/qt"

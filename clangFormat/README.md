@@ -8,8 +8,16 @@ clang-format 配置文件，带一个批量格式化项目代码的脚本。
 brew install clang-format
 ```
 
+##### Ubuntu安装 clang-format
+```shell
+sudo apt install clang-format
+```
+
+#### 配置
 运行 ClangFormat.py
-
+```shell
 python ClangFormat.py
+```
+格式化完成。
 
-格式化完成。不过我的配置文件我还不是很满意，你可以在我的配置文件上调整。
+#### VSCode直接使用配置文件
